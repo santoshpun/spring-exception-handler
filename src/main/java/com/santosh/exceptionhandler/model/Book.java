@@ -1,11 +1,16 @@
-package com.santosh.model;
+package com.santosh.exceptionhandler.model;
 
 import java.math.BigDecimal;
+
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 
 public class Book {
 
 	private Long id;
+	@NotEmpty(message = "First name is required")
 	private String name;
+	@NotNull(message = "Price must be valid")
 	private BigDecimal price;
 
 	public Book() {

@@ -1,4 +1,4 @@
-package com.santosh.repository;
+package com.santosh.exceptionhandler.repository;
 
 import java.math.BigDecimal;
 import java.sql.ResultSet;
@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
-import com.santosh.model.Book;
+import com.santosh.exceptionhandler.model.Book;
 
 @Repository
 public class JdbcBookRepository implements BookRepository {

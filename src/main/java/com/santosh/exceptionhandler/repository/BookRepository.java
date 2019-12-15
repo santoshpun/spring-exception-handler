@@ -1,9 +1,9 @@
-package com.santosh.repository;
+package com.santosh.exceptionhandler.repository;
 
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.santosh.model.Book;
+import com.santosh.exceptionhandler.model.Book;
 
 public interface BookRepository {
 

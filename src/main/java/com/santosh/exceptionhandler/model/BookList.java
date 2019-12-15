@@ -1,4 +1,4 @@
-package com.santosh.model;
+package com.santosh.exceptionhandler.model;
 
 import java.util.List;
 
