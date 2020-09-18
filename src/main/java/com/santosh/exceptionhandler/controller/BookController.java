@@ -33,12 +33,13 @@ public class BookController {
 	public ResponseEntity<?> getUser(@PathVariable("id") long id) {
 		System.out.println("Fetching book with id " + id);
 
-		Book book = bookRepository.findById(id);
-		if (book == null) {
-			throw new RecordNotFoundException("Book with id " + id + " not found");
-		}
+		throw new RecordNotFoundException("Book with id " + id + " not found");
+//		Book book = bookRepository.findById(id);
+//		if (book == null) {
+//			throw new RecordNotFoundException("Book with id " + id + " not found");
+//		}
 
-		return new ResponseEntity<Book>(book, HttpStatus.OK);
+		//return new ResponseEntity<Book>(book, HttpStatus.OK);
 	}
 
 	@RequestMapping(value = "/books", method = RequestMethod.POST)
